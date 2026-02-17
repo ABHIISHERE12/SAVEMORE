@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaveMore — Save Smart. Spend Smarter.</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="bg-gradient-mesh"></div>
+    <div class="bg-stars"></div>
+    <div class="bg-grain"></div>
+
+    <nav class="nav">
+        <div class="container nav-content">
+            <div class="logo">SAVE<span class="highlight">MORE</span></div>
+            <div class="nav-actions">
+                <div class="nav-links">
+                    <a href="index.html#features">Features</a>
+                    <a href="index.html#how">How it works</a>
+                </div>
+                <div class="auth-group" data-auth-state="logged-out">
+                    <a href="login.html" class="btn-text">Login</a>
+                    <a href="signup.html" class="btn btn-primary btn-signup">Sign Up</a>
+                </div>
+                <div class="auth-group" data-auth-state="logged-in" style="display: none;">
+                    <a href="dashboard.html" class="btn btn-nav-dashboard">Dashboard</a>
+                    <button id="logout-btn" class="btn-text">Log Out</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Section 1: HERO -->
+        <section class="hero container section-padding">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <span class="hero-intro fade-up">A basic app that understands the psychology behind saving and spending money</span>
+                    <h1 class="fade-up delay-1">Save Smart.<br>Spend Smarter.</h1>
+                    <p class="fade-up delay-2">The first goal-based savings platform built specifically for students.</p>
+                    <div class="hero-actions fade-up delay-2">
+                        <a href="signup.html" class="btn btn-primary">Start Saving Now</a>
+                        <a href="#demo" class="btn btn-outline">View Demo</a>
+                    </div>
+                </div>
+                <div class="hero-right fade-up delay-3">
+                    <div class="hero-visual-container" id="hero-parallax-container">
+                        <!-- Main Radial Progress Card (Cinematic Hero Version) -->
+                        <div class="parallax-layer layer-main">
+                            <div class="radial-progress-card hero-version">
+                                <div class="card-interior">
+                                    <div class="radial-visual-group">
+                                        <div class="radial-container-lg">
+                                            <svg viewBox="0 0 100 100" class="radial-svg-segmented">
+                                                <circle cx="50" cy="50" r="45" class="radial-track" stroke-dasharray="10 2.5" />
+                                                <circle cx="50" cy="50" r="45" class="radial-progress" 
+                                                    stroke-dasharray="10 2.5" 
+                                                    style="--progress-offset: calc(283 * (1 - 0.82));" />
+                                            </svg>
+                                            <div class="radial-center-lg">
+                                                <span class="percentage-hero">82<span class="pct">%</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-details-group">
+                                        <div class="card-header-mini">
+                                            <h3>Platform Progress</h3>
+                                            <p>Real-time system monitoring</p>
+                                        </div>
+                                        <div class="card-stats-grid">
+                                            <div class="card-stat-row">
+                                                <span class="stat-label">System Status</span>
+                                                <span class="stat-val status-positive">Operational <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                                            </div>
+                                            <div class="card-stat-row">
+                                                <span class="stat-label">Total Savings</span>
+                                                <span class="stat-val highlight-val">₹12,450.00</span>
+                                            </div>
+                                            <div class="card-stat-row">
+                                                <span class="stat-label">Active Streak</span>
+                                                <span class="stat-val highlight-val">14 Days 🔥</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-glow-reflection"></div>
+                            </div>
+                        </div>
+
+                        <!-- Secondary Floating Accents for Parallax -->
+                        <div class="parallax-layer layer-goal">
+                            <div class="floating-accent-pill">
+                                <span class="accent-icon">🌍</span>
+                                <span>Summer Trip</span>
+                            </div>
+                        </div>
+                        <div class="parallax-layer layer-streak">
+                            <div class="floating-accent-pill">
+                                <span class="accent-icon">🎮</span>
+                                <span>New Setup</span>
+                            </div>
+                        </div>
+                        <!-- Decorative floating elements -->
+                        <div class="parallax-layer layer-blob-1"></div>
+                        <div class="parallax-layer layer-blob-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: FEATURES -->
+        <section id="features" class="container section-padding">
+            <div class="section-header">
+                <h2 class="fade-up">Built for Disciplined Growth</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-up">
+                    <div class="icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h3>Goal Based</h3>
+                    <p>Structured saving for what matters most to you.</p>
+                </div>
+                <div class="feature-card fade-up delay-1">
+                    <div class="icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </div>
+                    <h3>Smart Locks</h3>
+                    <p>Lock your savings with conditions that build discipline.</p>
+                </div>
+                <div class="feature-card fade-up delay-2">
+                    <div class="icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+                    </div>
+                    <h3>Track Growth</h3>
+                    <p>Visual progress rings that show exactly how close you are.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: HOW IT WORKS (Redesigned) -->
+        <section id="how" class="container section-padding how-redesign">
+            <div class="editorial-layout">
+                <div class="editorial-left">
+                    <span class="section-label fade-up">HOW IT WORKS</span>
+                    <h2 class="fade-up delay-1">Saving made simple.</h2>
+                    <p class="fade-up delay-2">We've automated the discipline, so you can focus on the reward. Our structured system ensures your money stays safe until your goals are met.</p>
+                    <div class="fade-up delay-3">
+                        <a href="signup.html" class="btn-text learn-more-cta">Learn more about our system &rarr;</a>
+                    </div>
+                </div>
+                
+                <div class="editorial-right">
+                    <div class="staggered-grid">
+                        <!-- Card 1: Wide -->
+                        <div class="work-card card-wide fade-up">
+                            <div class="card-content">
+                                <div class="card-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                                </div>
+                                <div class="card-text">
+                                    <h3>Set Your Goal</h3>
+                                    <p>Choose what you're saving for and define your target amount with customized timelines.</p>
+                                </div>
+                            </div>
+                            <div class="card-visual-component">
+                                <div class="mini-goal-ui">
+                                    <div class="mini-field">
+                                        <span>Goal Name</span>
+                                        <div class="mini-input">MacBook Pro</div>
+                                    </div>
+                                    <div class="mini-row">
+                                        <div class="mini-field">
+                                            <span>Target</span>
+                                            <div class="mini-pill">₹1,50,000</div>
+                                        </div>
+                                        <div class="mini-field">
+                                            <span>Time</span>
+                                            <div class="mini-pill">12 Months</div>
+                                        </div>
+                                    </div>
+                                    <div class="mini-btn">Create Goal</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Vertical -->
+                        <div class="work-card card-vertical card-dark fade-up delay-1">
+                            <div class="card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            </div>
+                            <h3>Lock & Grow</h3>
+                            <p>Smart withdrawal rules protect your savings until milestones are reached.</p>
+                        </div>
+
+                        <!-- Card 3: Vertical -->
+                        <div class="work-card card-vertical card-accent fade-up delay-2">
+                            <div class="card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+                            </div>
+                            <h3>Track Progress</h3>
+                            <p>Monitor your savings visually in real time with intuitive growth trackers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: TRUST & CREDIBILITY (Redesigned) -->
+        <section class="container section-padding testimonials-section">
+            <div class="trust-header fade-up">
+                <span class="badge-trust">TRUSTED BY 5,000+ STUDENTS</span>
+                <h2>What student savers are saying.</h2>
+            </div>
+            
+            <div class="testimonial-carousel fade-up delay-1">
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <!-- Slide 1 -->
+                        <li class="testimonial-slide active">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">“</div>
+                                <p class="quote-text">Finally a savings app that doesn't feel like a bank. It feels like a tool for my future. It actually makes me motivated to save for my degree.</p>
+                                <div class="testimonial-user">
+                                    <div class="user-avatar">AR</div>
+                                    <div class="user-meta">
+                                        <strong>Alex Rivera</strong>
+                                        <span>Stanford University</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Slide 2 -->
+                        <li class="testimonial-slide">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">“</div>
+                                <p class="quote-text">The smart locks actually helped me stop dipping into my lunch money. Game changer for anyone struggling with discipline.</p>
+                                <div class="testimonial-user">
+                                    <div class="user-avatar">JC</div>
+                                    <div class="user-meta">
+                                        <strong>Jordan Chen</strong>
+                                        <span>MIT Scholar</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Slide 3 -->
+                        <li class="testimonial-slide">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">“</div>
+                                <p class="quote-text">SaveMore turned my chaotic spending into intentional saving. I managed to save for a new laptop in just 6 months.</p>
+                                <div class="testimonial-user">
+                                    <div class="user-avatar">SM</div>
+                                    <div class="user-meta">
+                                        <strong>Sarah Miller</strong>
+                                        <span>UC Berkeley</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="carousel-nav">
+                    <button class="carousel-indicator active"></button>
+                    <button class="carousel-indicator"></button>
+                    <button class="carousel-indicator"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: FINAL CTA (Dynamic Auth State) -->
+        <section class="container section-padding final-cta">
+            <!-- Logged Out View -->
+            <div class="cta-glass-card fade-up auth-group" data-auth-state="logged-out">
+                <div class="cta-content">
+                    <span class="section-label">Ready to start?</span>
+                    <h2 class="cta-title">Start Saving <span class="highlight">Today.</span></h2>
+                    <p class="cta-subtitle">Join thousands of students building their financial future with SaveMore.</p>
+                    <div class="cta-actions">
+                        <a href="signup.html" class="btn btn-primary btn-lg">Create Your Account</a>
+                    </div>
+                </div>
+                <div class="cta-glow-1"></div>
+                <div class="cta-glow-2"></div>
+            </div>
+
+            <!-- Logged In View: Dashboard Snippet (Segmented UI) -->
+            <div class="cta-glass-card fade-up auth-group" data-auth-state="logged-in" style="display: none;">
+                <div class="radial-progress-card snippet-version">
+                    <div class="card-interior">
+                        <div class="radial-visual-group">
+                            <div class="radial-container-sm">
+                                <svg viewBox="0 0 100 100" class="radial-svg-segmented">
+                                    <circle cx="50" cy="50" r="45" class="radial-track" stroke-dasharray="10 2.5" />
+                                    <circle cx="50" cy="50" r="45" class="radial-progress" 
+                                        stroke-dasharray="10 2.5" 
+                                        style="--progress-offset: calc(283 * (1 - 0.82));" />
+                                </svg>
+                                <div class="radial-center-sm">
+                                    <span class="percentage-val-sm">82<span class="pct">%</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-details-group">
+                            <div class="card-header-mini">
+                                <h3>Savings Progress</h3>
+                                <p>Real-time tracking of your financial goals</p>
+                            </div>
+                            <div class="card-stats-grid">
+                                <div class="card-stat-row">
+                                    <span class="stat-label">Status:</span>
+                                    <span class="stat-val status-positive">Active <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                                </div>
+                                <div class="card-stat-row">
+                                    <span class="stat-label">Progress:</span>
+                                    <span class="stat-val">82%</span>
+                                </div>
+                                <div class="card-stat-row">
+                                    <span class="stat-label">Current:</span>
+                                    <span class="stat-val highlight-val">₹2,100</span>
+                                </div>
+                                <div class="card-stat-row">
+                                    <span class="stat-label">Deadline:</span>
+                                    <span class="stat-val">June 15, 2026</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Action button -->
+                <div class="snippet-cta-footer">
+                    <a href="dashboard.html" class="btn btn-primary btn-premium-cta">Go to your savings</a>
+                </div>
+                <div class="cta-glow-1"></div>
+            </div>
+        </section>
+    </main>
+    <!-- Section 6: FOOTER (Redesigned & Interactive) -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand -->
+                <div class="footer-col brand-col">
+                    <div class="logo">
+                        SAVE<span class="highlight">MORE</span>
+                    </div>
+                    <p class="footer-tagline">Empowering the next generation of disciplined savers.</p>
+                    <p class="footer-desc">Building tools that make financial discipline feel rewarding and intentional.</p>
+                </div>
+
+                <!-- Column 2: Product -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how">How It Works</a></li>
+                        <li><a href="#">Smart Locks</a></li>
+                        <li><a href="#">Roadmap</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Company -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2026 SaveMore Technologies Inc. All rights reserved.
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

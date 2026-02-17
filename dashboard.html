@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | SaveMore</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+<body class="dashboard-body">
+    <div class="bg-gradient-mesh"></div>
+
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">SAVE<span class="highlight">MORE</span></div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="active">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                    Overview
+                </a>
+                <a href="#">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    Goals
+                </a>
+                <a href="#">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>
+                    Wallet
+                </a>
+                <a href="#">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20v-6M6 20V10M18 20V4"/></svg>
+                    Analytics
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="auth-group" data-auth-state="logged-in">
+                    <button id="logout-btn" class="btn-text" style="font-size: 14px; color: var(--text-muted);">Log Out</button>
+                </div>
+            </div>
+        </aside>
+
+        <main class="dashboard-main">
+            <header class="main-header">
+                <div class="welcome-text">
+                    <h1>Welcome back, Alex</h1>
+                    <p>You're 82% towards your "Summer Trip" goal!</p>
+                </div>
+                <div class="header-actions">
+                    <div class="balance-pill">
+                        <span class="label">Balance</span>
+                        <span class="amount">₹2,840.00</span>
+                    </div>
+                </div>
+            </header>
+
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>Total Savings</h3>
+                        <div class="stat-value">₹12,450</div>
+                        <div class="stat-change positive">+12% this month</div>
+                    </div>
+                    <div class="progress-ring-mini">
+                        <!-- Progress mini circle -->
+                        <div class="circle-box">82%</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>Savings Streak</h3>
+                        <div class="stat-value">14 Days</div>
+                        <div class="stat-change">Maintain for 7 more days</div>
+                    </div>
+                    <div class="stat-icon streak">🔥</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>Active Goals</h3>
+                        <div class="stat-value">3</div>
+                        <div class="stat-change">Next target: June 15</div>
+                    </div>
+                    <div class="stat-icon">🎯</div>
+                </div>
+            </section>
+
+            <section class="goals-section">
+                <div class="section-top">
+                    <h2>Active Goals</h2>
+                    <button class="btn btn-primary btn-sm">+ New Goal</button>
+                </div>
+                <div class="goals-list">
+                    <div class="goal-card-horizontal">
+                        <div class="goal-main">
+                            <h4>Summer Break Trip</h4>
+                            <div class="goal-meta">₹2,100 / ₹2,500</div>
+                            <div class="progress-bar-bg">
+                                <div class="progress-fill" style="width: 82%;"></div>
+                            </div>
+                        </div>
+                        <div class="goal-actions">
+                            <button class="btn btn-primary">Add Money</button>
+                            <button class="btn btn-outline">Withdraw</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="activity-section">
+                <h2>Recent Activity</h2>
+                <div class="activity-table-wrapper">
+                    <table class="activity-table">
+                        <thead>
+                            <tr>
+                                <th>Transaction</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Summer Trip Contribution</td>
+                                <td>May 24, 2026</td>
+                                <td class="amount positive">+₹200.00</td>
+                                <td><span class="status status-approved">Approved</span></td>
+                            </tr>
+                            <tr>
+                                <td>Monthly Auto-Save</td>
+                                <td>May 20, 2026</td>
+                                <td class="amount positive">+₹500.00</td>
+                                <td><span class="status status-pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>Unscheduled Withdrawal</td>
+                                <td>May 15, 2026</td>
+                                <td class="amount negative">-₹50.00</td>
+                                <td><span class="status status-rejected">Rejected</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modals (Simple simulation) -->
+    <div id="modal-container"></div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/dashboard.js"></script>
+</body>
+</html>

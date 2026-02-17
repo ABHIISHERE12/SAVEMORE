@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | SaveMore</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/auth.css">
+</head>
+<body class="auth-body">
+    <div class="bg-gradient-mesh"></div>
+    <div class="bg-noise"></div>
+
+    <div class="auth-container fade-up">
+        <div class="auth-card">
+            <header class="auth-header">
+                <div class="logo">SAVE<span class="highlight">MORE</span></div>
+                <h1>Welcome Back</h1>
+                <p>Build your financial future, one goal at a time.</p>
+            </header>
+
+            <form class="auth-form" id="login-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="name@college.edu" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox-group">
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#" class="btn-text">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-auth">Login to SaveMore</button>
+            </form>
+
+            <footer class="auth-footer">
+                Don't have an account? <a href="signup.html">Sign Up</a>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script>
+        document.getElementById('login-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Simulate successful login
+            localStorage.setItem('savemore_isLoggedIn', 'true');
+            window.location.href = 'dashboard.html';
+        });
+    </script>
+</body>
+</html>
